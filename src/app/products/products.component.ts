@@ -16,7 +16,6 @@ export class ProductsComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log('data:', data);
     this.products = data.productList;
   }
 

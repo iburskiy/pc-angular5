@@ -1,3 +1,4 @@
+// noinspection TsLint
 export default
 {
   "filterFields": ["cpu", "date", "color", "os", "typeHD"],
