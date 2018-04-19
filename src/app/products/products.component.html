@@ -1,0 +1,14 @@
+<ul class="products-wrapper">
+  <li *ngFor="let product of products">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12 row elem">
+      <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <a href="/#about/notebook/{{product.href}}" title="{{product.manufacturer}} {{product.model}}" class="link-item"><img src="{{product.img0}}"></a>
+      </div>
+      <div class="col-xl-8 col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <strong><a href="/#about/query/{{product.href}}" title="{{product.manufacturer}} {{product.model}}" class="link-item">{{product.manufacturer}} {{product.model}}</a></strong>
+        <p>{{product.cpu}} {{product.platform}} {{product.type}} {{product.ram}} {{product.color}} </p>
+      </div>
+    </div>
+  </li>
+</ul>
+
