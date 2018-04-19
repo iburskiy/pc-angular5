@@ -25,3 +25,7 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+---------
+
+Original project used CSS. I decided to use Bootstrap and SASS (Bootstrap 4 goes with SASS, not LESS). So I used the approach suggested in 
+https://stackoverflow.com/questions/45660802/how-to-use-bootstrap-4-with-sass-in-angular
