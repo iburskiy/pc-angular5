@@ -2,7 +2,7 @@
 /* eslint-disable import/no-webpack-loader-syntax,import/no-unresolved */
 import { Component, OnInit } from '@angular/core';
 import data from '../../assets/notebook';
-import { Product } from '../entities/product';
+import Product from '../entities/product';
 
 @Component({
   selector: 'app-products',
