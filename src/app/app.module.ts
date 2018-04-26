@@ -6,13 +6,17 @@ import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { FiltersComponent } from './filters/filters.component';
+import { FilterComponent } from './filter/filter.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductsComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    FiltersComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,

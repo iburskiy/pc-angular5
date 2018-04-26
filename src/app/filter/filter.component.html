@@ -1,0 +1,11 @@
+<div>{{filterName}}</div>
+<ul class="filter-values">
+  <li *ngFor="let filterValue of filterValues">
+    <div class="checkbox">
+      <label class="filter-label">
+        <input type="checkbox">
+        <span class="filter-value">{{filterValue}}</span>
+      </label>
+    </div>
+  </li>
+</ul>
