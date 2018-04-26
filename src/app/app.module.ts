@@ -8,6 +8,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { FiltersComponent } from './filters/filters.component';
 import { FilterComponent } from './filter/filter.component';
+import { MainPageComponent } from './main-page/main-page.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FilterComponent } from './filter/filter.component';
     ProductsComponent,
     ProductDetailComponent,
     FiltersComponent,
-    FilterComponent
+    FilterComponent,
+    MainPageComponent,
   ],
   imports: [
     BrowserModule,
