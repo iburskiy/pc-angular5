@@ -3,7 +3,7 @@
   <li *ngFor="let filterValue of filterValues">
     <div class="checkbox">
       <label class="filter-label">
-        <input type="checkbox">
+        <input type="checkbox" class="filter-input" (change)="onFilterChange($event, filterName, filterValue)">
         <span class="filter-value">{{filterValue}}</span>
       </label>
     </div>

@@ -6,6 +6,11 @@
   cursor: pointer;
 }
 
+// this class is a hack for pointer
+.filter-input {
+  cursor: pointer;
+}
+
 .filter-value {
-  margin-left: 4px;
+  padding-left: 4px;
 }

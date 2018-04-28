@@ -1,5 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import data from '../../assets/notebook';
+import {FilteringService} from '../filtering.service';
 
 @Component({
   selector: 'app-filter',
@@ -12,7 +13,7 @@ export class FilterComponent implements OnInit {
 
   filterValues: string[] = [];
 
-  constructor() { }
+  constructor(private filteringService: FilteringService) { }
 
   ngOnInit() {
     data.productList.forEach((item) => {
@@ -20,6 +21,10 @@ export class FilterComponent implements OnInit {
         this.filterValues.push(item[this.filterName]);
       }
     });
+  }
+
+  onFilterChange(event, filterName, filterValue) {
+    this.filteringService.filterProducts(event.target.checked, filterName, filterValue);
   }
 
 }

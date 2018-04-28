@@ -10,6 +10,7 @@ import { FiltersComponent } from './filters/filters.component';
 import { FilterComponent } from './filter/filter.component';
 import { MainPageComponent } from './main-page/main-page.component';
 
+import {FilteringService} from './filtering.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { MainPageComponent } from './main-page/main-page.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [FilteringService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
